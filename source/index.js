@@ -5,7 +5,7 @@ const port = 4000;
 const cors = require("cors");
 //Vamos a importar dotenv
 require("dotenv").config();
-const { dbConnection } = require("./src/database/config");
+const { dbConnection } = require("./source/database/config");
 
 //Vamos a invocar la función de conexion
 dbConnection();
@@ -23,8 +23,8 @@ app.get("/", (req, res) => {
 });
 
 //Rutas de la API
-app.use("/api/jugadores", require("./src/routes/jugadores.routes"));
-app.use("/api/jugadores", require("./src/routes/jugadores.routes"));
+app.use("/api/jugadores", require("./source/routes/jugadores.routes"));
+app.use("/api/jugadores", require("./source/routes/jugadores.routes"));
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
