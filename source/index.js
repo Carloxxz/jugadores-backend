@@ -5,7 +5,7 @@ const port = 4000;
 const cors = require("cors");
 //Vamos a importar dotenv
 require("dotenv").config();
-const { dbConnection } = require("./source/database/config");
+const { dbConnection } = require("./database/config");
 
 //Vamos a invocar la función de conexion
 dbConnection();
