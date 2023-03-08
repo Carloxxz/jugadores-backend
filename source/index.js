@@ -23,8 +23,8 @@ app.get("/", (req, res) => {
 });
 
 //Rutas de la API
-app.use("/api/jugadores", require("./source/routes/jugadores.routes"));
-app.use("/api/jugadores", require("./source/routes/jugadores.routes"));
+app.use("/api/jugadores", require("./routes/jugadores.routes"));
+app.use("/api/jugadores", require("./routes/jugadores.routes"));
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
